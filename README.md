@@ -17,7 +17,7 @@ npm install
 ```
 
 ## Configuración Base de Datos
-Crea una base de datos con nombre **yts**, usuario **postgres**, y clave **admin**. Si ya tienes los datos anteriores creados, debes dirigirte a la siguiente ruta:
+Crea una base de datos con nombre **yts**, usuario **postgres**, clave **admin**, host **localhost**. Si ya tienes los datos anteriores creados, debes dirigirte a la siguiente ruta:
 
 `SRC/db/db.js`
 
