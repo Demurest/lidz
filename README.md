@@ -61,7 +61,7 @@ Para tener a todos los clientes utiliza esta URL con el método  GET:
 
 `http://localhost:3001/clients`
 
-Para obtener un cliente en específico utiliza esta URL con el método  GET:
+Para obtener un cliente en específico utiliza esta URL con el método  GET, recuerda usar una **ID** existente en la base de datos.
 
 `http://localhost:3001/clients/<id>`
 
