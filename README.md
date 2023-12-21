@@ -1,27 +1,33 @@
 # Instrucciones
 
-## requerimientos
+## Requerimientos
 - PostgreSQL
 - Node 20.10.0
 - Nodemon 3.0.2
-- sequelize 6.35.2
-- koa 2.14.2
+- Sequelize 6.35.2
+- Koa 2.14.2
+
+Después de realizar el git clone, debes instalar las dependencias. Dentro del repositorio, utiliza el siguiente comando:
+
+```bash
+npm install
+```
 
 ## Configuración Base de Datos
-Crea una base de datos con nombre **yts**, usuario **postgres** y clave **admin**. Si ya tienes los datos anteriores creados debes dirigirte a la siguiente ruta:
+Crea una base de datos con nombre **yts**, usuario **postgres**, y clave **admin**. Si ya tienes los datos anteriores creados, debes dirigirte a la siguiente ruta:
 
 `SRC/db/db.js`
 
 En este script podrás cambiar las credenciales.
 
-Una vez que tengas listo los pasos anteriores deberas ejecutar el siguiente comando en la misma dirección anterior:
+Una vez que hayas completado los pasos anteriores, deberás ejecutar el siguiente comando en la misma dirección anterior:
 
 ````bash
 node sync-db.js
 ````
-Una vez ejecutado el comando se habrán creado las tablas en la base de datos.
+Una vez ejecutado el comando, se habrán creado las tablas en la base de datos.
 
-Si quieres puedes poblar la base de datos con los siguientes datos iniciales:
+Si quieres, puedes poblar la base de datos con los siguientes datos iniciales:
 ```sql
 INSERT INTO clients (nombre, rut, salario, ahorros, "createdAt", "updatedAt")
 VALUES ('Carlos', '94569870', 80000, 100, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
@@ -41,26 +47,26 @@ VALUES ('Buenos Días','client','9/8/2012',CURRENT_TIMESTAMP, CURRENT_TIMESTAMP,
 ```
 
 ## Probando la API
-Puedes probar la API a través de Postman o Thunder Cient. 
+Puedes probar la API a través de Postman o Thunder Client.
 
-Primero inicia el servidor con:
+Primero, inicia el servidor con:
 ```bash
 npm start
 ```
 
-Para tener a todos los clientes utiliza esta URL con el metodo GET:
+Para tener a todos los clientes utiliza esta URL con el método  GET:
 
 `http://localhost:3001/clients`
 
-Para obtener un cliente en especifico utiliza esta URL con el metodo GET:
+Para obtener un cliente en específico utiliza esta URL con el método  GET:
 
 `http://localhost:3001/clients/<id>`
 
-Para hacerle un seguimiento a los clientes utiliza esta URL con el metodo GET:
+Para hacerle un seguimiento a los clientes, utiliza esta URL con el método  GET:
 
 `http://localhost:3001/clients/clients-to-do-follow-up`
 
-Para crear un cliente utiliza esta URL con el metodo POST:
+Para crear un cliente, utiliza esta URL con el método  POST:
 
 `http://localhost:3001/clients`
 
