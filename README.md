@@ -69,6 +69,10 @@ Para hacerle un seguimiento a los clientes, utiliza esta URL con el método  GET
 
 `http://localhost:3001/clients/clients-to-do-follow-up`
 
+Para calcular si un cliente tiene una oportunidad de compra, utiliza esta URL con el método GET, recuerda cambiar la **ID**.
+
+`http://localhost:3001/clients/<id>/score`
+
 Para crear un cliente, utiliza esta URL con el método  POST:
 
 `http://localhost:3001/clients`
