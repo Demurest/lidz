@@ -43,12 +43,53 @@ VALUES ('Buenos Días','client','9/8/2012',CURRENT_TIMESTAMP, CURRENT_TIMESTAMP,
 ## Probando la API
 Puedes probar la API a través de Postman o Thunder Cient. 
 
+Primero inicia el servidor con:
+```bash
+npm start
+```
+
 Para tener a todos los clientes utiliza esta URL con el metodo GET:
 
 `http://localhost:3001/clients`
 
 Para obtener un cliente en especifico utiliza esta URL con el metodo GET:
+
 `http://localhost:3001/clients/<id>`
 
 Para hacerle un seguimiento a los clientes utiliza esta URL con el metodo GET:
+
 `http://localhost:3001/clients/clients-to-do-follow-up`
+
+Para crear un cliente utiliza esta URL con el metodo POST:
+
+`http://localhost:3001/clients`
+
+Adjunto JSON para realizar la prueba de crear un cliente:
+
+```json
+{
+  "nombre":"Eric",
+  "rut":"000000", 
+  "salario":"500", 
+  "ahorros":"0",
+  "messages": [
+      {
+        "text":"Hola?", 
+        "role":"Client", 
+        "sentat":"2021-12-20"
+      },
+      {
+        "text":"Hola como estas?", 
+        "role":"Client", 
+        "sentat":"2021-12-20"
+      }
+    ],
+  "debts":[
+      {
+          "institution":"UBB", 
+          "amount":"1000000", 
+          "duedate":"1998-9-10"
+      }
+    ]
+}
+```
