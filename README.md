@@ -30,7 +30,7 @@ node sync-db.js
 ````
 Una vez ejecutado el comando, se habrán creado las tablas en la base de datos.
 
-Si quieres, puedes poblar la base de datos con los siguientes datos iniciales:
+Si quieres, puedes poblar la base de datos con los siguientes datos iniciales en este mismo orden:
 ```sql
 INSERT INTO clients (nombre, rut, salario, ahorros, "createdAt", "updatedAt")
 VALUES ('Carlos', '94569870', 80000, 100, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
