@@ -1,8 +1,11 @@
 # Instrucciones
 
+
 ## Requerimientos
 - PostgreSQL
 - Node 20.10.0
+
+## Dependencias
 - Nodemon 3.0.2
 - Sequelize 6.35.2
 - Koa 2.14.2
