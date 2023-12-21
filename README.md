@@ -2,7 +2,7 @@
 
 
 ## Requerimientos
-- PostgreSQL
+- PostgreSQL 15
 - Node 20.10.0
 
 ## Dependencias
